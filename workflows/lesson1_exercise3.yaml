@@ -1,0 +1,24 @@
+name: Lesson 1 - Exercise 3
+
+run-name: Run of the complex workflow
+
+on:
+  # Workflow run trigger events
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  # Manually trigger workflow run
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4.4.0
+
+      - name: show nodejs version
+        run: node -e "console.log('running from node!')"      
