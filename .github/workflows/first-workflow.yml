@@ -1,0 +1,22 @@
+name: my first workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: use node js 18
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      
+      - name: hello world
+        run: echo "Hello, world!"
