@@ -1,4 +1,4 @@
-name: "Lesson 3 - Exercise 1"
+name: "greeting_template"
 
 on:
   workflow_call: 

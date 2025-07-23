@@ -1,4 +1,4 @@
-name: "Lesson 2 - Exercise 3"
+name: "variables"
 
 on:
   workflow_dispatch:

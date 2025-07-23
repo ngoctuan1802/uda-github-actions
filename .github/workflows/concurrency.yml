@@ -1,4 +1,4 @@
-name: "Lesson 2 - Exercise 4"
+name: "concurrency"
 
 on:
           push:
